@@ -1,15 +1,20 @@
 # move-lines.nvim
 
-A Neovim plugin for moving lines up and down in visual mode.
+A Simple Neovim plugin for moving lines of code in visual mode.
 
 ## Features
-- Move selected lines up or down with customizable keybindings.
+- Move selected lines up, down, left or right with customizable keybindings.
 - Lightweight and minimal.
 
 ## Installation
 
 ### Using `lazy.nvim`
-The default keybindings are `<C-J>` to move lines down and `<C-K>` to move lines up.
+The default keybindings are:
+- `<C-J>` to move lines down.
+- `<C-K>` to move lines up.
+- `<C-H>` to move lines left.
+- `<C-L>` to move lines right.
+
 ```Default keybindings
 {
     'kobbikobb/move-lines.nvim',
@@ -26,6 +31,8 @@ The default keybindings are `<C-J>` to move lines down and `<C-K>` to move lines
         require('move-lines').setup({
             move_down = '<C-J>', -- Custom key for moving lines down
             move_up = '<C-K>',   -- Custom key for moving lines up
+            move_left = '<C-H>', -- Custom key for moving lines left
+            move_right = '<C-L>' -- Custom key for moving lines right
         })
     end,
 }
@@ -33,13 +40,27 @@ The default keybindings are `<C-J>` to move lines down and `<C-K>` to move lines
 
 ### Using `packer.nvim`
 
+```Default keybindings
+{
+    'kobbikobb/move-lines.nvim',
+    config = function()
+        require('move-lines').setup()
+    end,
+}
+```
+
 ```Custom keybindings
 use {
     'kobbikobb/move-lines.nvim',
     config = function()
         require('move-lines').setup({
-            move_down = '<C-J>', -- Customize your keys here
             move_down = '<C-J>', -- Custom key for moving lines down
+            move_up = '<C-K>',   -- Custom key for moving lines up
+            move_left = '<C-H>', -- Custom key for moving lines left
+            move_right = '<C-L>' -- Custom key for moving lines right
+
         })
     end
 }
+```
+
