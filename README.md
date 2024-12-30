@@ -14,7 +14,7 @@ A Simple Neovim plugin for moving lines of code in visual mode.
 
 ## Installation
 
-## Using `lazy.nvim`
+### Using `lazy.nvim`
 
 ```Default keybindings
 {
