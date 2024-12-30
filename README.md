@@ -6,8 +6,7 @@ A Simple Neovim plugin for moving lines of code in visual mode.
 - Move selected lines up, down, left or right with customizable keybindings.
 - Lightweight and minimal.
 
-## Using `lazy.nvim`
-The default keybindings are:
+## Default keybindings
 - `<C-J>` to move lines down.
 - `<C-K>` to move lines up.
 - `<C-H>` to move lines left.
@@ -15,6 +14,7 @@ The default keybindings are:
 
 ## Installation
 
+## Using `lazy.nvim`
 
 ```Default keybindings
 {
