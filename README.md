@@ -47,7 +47,7 @@ A Simple Neovim plugin for moving lines selected in visual mode.
 }
 ```
 
-### With Custom keybindings
+### With custom keybindings
 
 ```lua
 require('move-lines').setup({
