@@ -1,9 +1,20 @@
 # move-lines.nvim
 
-A Simple Neovim plugin for moving lines of code in visual mode.
+A Simple Neovim plugin for moving lines selected in visual mode.
+
+<!-- TOC -->
+
+- [Features](#features)
+- [Default keybindings](#default-keybindings)
+- [Installation](#installation)
+- [Contributing](#contributing)
+- [License](#license)
+
+<!-- /TOC -->
 
 ## Features
-- Move selected lines up, down, left or right with customizable keybindings.
+- Moves selected lines up, down, left or right.
+- Customizable keybindings.
 - Lightweight and minimal.
 
 ## Default keybindings
@@ -16,7 +27,7 @@ A Simple Neovim plugin for moving lines of code in visual mode.
 
 ### Using `lazy.nvim`
 
-```Default keybindings
+```lua
 {
     'kobbikobb/move-lines.nvim',
     config = function()
@@ -25,7 +36,7 @@ A Simple Neovim plugin for moving lines of code in visual mode.
 }
 ```
 
-```Custom Keybindings
+```lua
 {
     'kobbikobb/move-lines.nvim',
     config = function()
@@ -41,7 +52,7 @@ A Simple Neovim plugin for moving lines of code in visual mode.
 
 ### Using `packer.nvim`
 
-```Default keybindings
+```lua
 {
     'kobbikobb/move-lines.nvim',
     config = function()
@@ -50,7 +61,7 @@ A Simple Neovim plugin for moving lines of code in visual mode.
 }
 ```
 
-```Custom keybindings
+```lua
 use {
     'kobbikobb/move-lines.nvim',
     config = function()
@@ -64,4 +75,12 @@ use {
     end
 }
 ```
+
+## Contributing
+
+We welcome contributions! Feel free to submit issues or pull requests to improve the plugin.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
