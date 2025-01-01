@@ -1,6 +1,6 @@
 # move-lines.nvim
 
-A Simple Neovim plugin for moving lines selected in visual mode.
+A Simple Neovim plugin for moving lines in virtual mode.
 
 <!-- TOC -->
 
